@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romellyn Balalong | Developer Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN JSDELIVR -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Brand Name set to bright Cyan Blue -->
+        <a class="navbar-brand fw-bold me-auto" href="#hero" style="color: #00d2ff !important; white-space: nowrap !important;">
+            Romellyn Balalong
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center me-3">
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#philosophy">Design Philosophy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn btn-outline-secondary btn-sm" id="themeToggleBtn" type="button" title="Toggle Theme">
+                <i class="bi bi-sun-fill" id="themeIcon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Page -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary border border-primary mb-3">Computer Science Student & Developer</span>
+                    <h1 class="fw-bold mb-3 name-title" style="color: #38bdf8 !important; white-space: nowrap !important;">Romellyn G. Balalong</h1>
+                    <!-- Developer Motto-Saying -->
+                    <blockquote class="blockquote border-start border-primary border-4 ps-3 py-1 my-4">
+                        <p class="fs-5 italic text-body-secondary mb-0">"Simplicity is the soul of efficiency. Code should not only perform seamlessly but communicate purpose intuitively."</p>
+                    </blockquote>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#portfolio" class="btn btn-primary btn-lg"><i class="bi bi-briefcase me-2"></i>View Works</a>
+                        <a href="#contact" class="btn btn-outline-secondary btn-lg"><i class="bi bi-envelope me-2"></i>Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Developer Photo -->
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="media/me.jpg" alt="Romellyn G. Balalong" class="img-fluid rounded-circle shadow-lg border border-3 border-primary custom-avatar" onerror="this.src='media/me.jpg'">
+                        <span class="position-absolute bottom-0 end-0 bg-success border border-white rounded-circle p-3 me-4 mb-3" title="Available for projects"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Philosophy Discussion -->
+    <section id="philosophy" class="py-5 bg-body-tertiary">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Design Philosophy</h2>
+                <p class="text-body-secondary">The core principles and aesthetics defining my digital craftsmanship and identity</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-primary mb-3"><i class="bi bi-layers"></i></div>
+                            <h4 class="card-title fw-bold">Functional Minimalist</h4>
+                            <p class="card-text text-body-secondary">I advocate for intentional interfaces where visual clutter is eliminated. Every element, margin, and typography scale must serve an intuitive functional purpose for the end user.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-primary mb-3"><i class="bi bi-code-slash"></i></div>
+                            <h4 class="card-title fw-bold">Clean Architecture</h4>
+                            <p class="card-text text-body-secondary">Behind every good interface lies modular, highly reusable code. Maintaining clean structure across CSS and JavaScript enables rapid scalability and long-term codebase efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-primary mb-3"><i class="bi bi-universal-access"></i></div>
+                            <h4 class="card-title fw-bold">User-Centric Utility</h4>
+                            <p class="card-text text-body-secondary">Aesthetics mean little without accessibility and responsive adaptability. My design workflow ensures seamless cross-device compatibility and dark/light thematic flexibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Projects Portfolio</h2>
+                <p class="text-body-secondary">Project Midterms to Finals featuring screenshots, details, and GitHub repositories</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="d-flex justify-content-center gap-2 mb-5" id="portfolioFilters">
+                <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary" data-filter="midterms">Midterms</button>
+                <button class="btn btn-outline-primary" data-filter="finals">Finals</button>
+            </div>
+
+            <!-- Dynamic Projects Container -->
+            <div class="row g-4" id="projectsContainer">
+                <!-- Injected via JavaScript main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 bg-body-tertiary">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Contact Us</h2>
+                        <p class="text-body-secondary">Have a project or opportunity in mind? Send a message.</p>
+                    </div>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="userName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="userName" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="userEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="userEmail" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5"><i class="bi bi-send me-2"></i>Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top text-center text-body-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Romellyn Gayamos Balalong. Built with Bootstrap 5 JS & CSS Frameworks.</p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProjectTitle">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalProjectImg" src="" alt="Project Screenshot" class="img-fluid rounded mb-3 w-100 object-fit-cover" style="max-height: 350px;">
+                    <span id="modalProjectCategory" class="badge bg-primary mb-2">Category</span>
+                    <p id="modalProjectDesc" class="text-body-secondary mt-2"></p>
+                    <div id="modalProjectTech" class="d-flex gap-2 flex-wrap mb-3"></div>
+                </div>
+                <div class="modal-footer">
+                    <a id="modalGithubLink" href="#" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github me-2"></i>View GitHub Repository</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS CDN JSDELIVR -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

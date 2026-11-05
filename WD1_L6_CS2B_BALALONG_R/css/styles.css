@@ -1,0 +1,203 @@
+/* ==========================================
+   Custom Developer Portfolio Typography & Styles
+   Romellyn Gayamos Balalong
+   ========================================== */
+
+/* 1. Global Typography & Root Settings */
+:root {
+    --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Heading Hierarchy Formats */
+h1, h2, h3, h4, h5, h6, .display-4 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+}
+
+.display-4 {
+    font-size: calc(1.825rem + 2.1vw);
+    font-weight: 800;
+    white-space: nowrap !important; /* Forces your name strictly onto one line */
+}
+
+h2 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+/* 3. Navbar Typography */
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: -0.03em;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* 4. Badges & Labels Formatting */
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.45em 0.75em;
+}
+
+/* 5. Motto & Blockquote Formatting */
+.blockquote p {
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    letter-spacing: -0.015em;
+}
+
+/* 6. Card Body Text Formatting */
+.card-title {
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.925rem;
+    line-height: 1.55;
+}
+
+/* 7. Glassmorphism Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.85) !important;
+}
+
+[data-bs-theme="light"] .navbar {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* 8. Avatar & Portfolio Media */
+.custom-avatar {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.custom-avatar:hover {
+    transform: scale(1.04) rotate(1deg);
+}
+
+.portfolio-card {
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(var(--bs-body-color-rgb), 0.08) !important;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+    border-color: rgba(var(--bs-primary-rgb), 0.3) !important;
+}
+
+.portfolio-img-wrapper {
+    overflow: hidden;
+    height: 220px;
+    background-color: var(--bs-secondary-bg);
+}
+
+.portfolio-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img-wrapper img {
+    transform: scale(1.08);
+}
+
+/* 9. Buttons Typography & State */
+.btn {
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+}
+
+.btn-lg {
+    font-size: 1.05rem;
+    padding: 0.75rem 1.5rem;
+}
+
+/* 10. Hero Text Adaptability (Blue Name Color for Both Modes) */
+
+/* Dark Mode Defaults */
+#hero h1, 
+#hero .display-4, 
+#hero .name-title {
+    color: #38bdf8 !important; /* Vibrant bright blue that pops on dark backgrounds */
+    white-space: nowrap !important;
+}
+
+#hero .text-body-secondary,
+#hero .blockquote p {
+    color: #94a3b8 !important;
+}
+
+/* Light Mode Overrides */
+[data-bs-theme="light"] #hero h1, 
+[data-bs-theme="light"] #hero .display-4, 
+[data-bs-theme="light"] #hero .name-title,
+body.light-mode #hero h1,
+body.light-mode #hero .display-4,
+body.light-mode #hero .name-title {
+    color: #0284c7 !important; /* Rich, clean professional blue for light mode */
+}
+
+[data-bs-theme="light"] #hero .text-body-secondary,
+[data-bs-theme="light"] #hero .blockquote p,
+body.light-mode #hero .text-body-secondary,
+body.light-mode #hero .blockquote p {
+    color: #334155 !important;
+}
+
+/* 11. Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bs-body-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-secondary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-primary);
+}
